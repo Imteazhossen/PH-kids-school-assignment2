@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*{
+    margin: 0 auto;
+}
+/* shared styles  */
+.logo-text,
+.navbar,
+.nav-links,
+.banner{
+    display: flex;
+}
+.btn-primary{
+    padding: .8rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .7rem;
+    color: white;
+    border: none;
+}
+.primary-color-bg{
+    background: rgb(254, 163, 1);
+}
+.primary-color{
+    color:  rgb(254, 163, 1);
+} 
+.secondary-color{
+    color: black;
+}
+.secondary-color-bg{
+    background-color: black;
+}
+.tertiary-color{
+    color: rgb(1, 172, 253);
+}
+/* navbar related styles  */
+ul > li{
+    list-style: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.navbar{
+    margin-top: 2rem;
+    align-items: center;
+    
+}
+.logo-text{
+    align-items: center;
+}
+/* banner related style  */
+.banner{
+    max-width: 84%;
+    margin-top: 3rem;
+    padding: 2rem;
+    
+}
+.banner-title{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+}
+.banner-text{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.banner-texts{
+    align-items: center;
+}
