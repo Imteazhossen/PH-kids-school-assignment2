@@ -23,7 +23,9 @@
 .nav-links,
 .banner,
 .curriculam-cards,
-.arrows {
+.arrows,
+.logos,
+.footer-content {
     display: flex;
 }
 
@@ -76,6 +78,19 @@
 
 .read-more-color3 {
     color: rgb(135, 0, 255);
+}
+.read-more-color4 {
+    color: rgb(60, 216, 232);
+}
+
+.date-color-blue {
+    background: rgb(60, 216, 232);
+}
+.date-color-green {
+    background: rgb(149, 178, 38);
+}
+.date-color-purple {
+    background: rgb(93, 88, 240);
 }
 
 .card {
@@ -163,7 +178,7 @@ ul>li {
 /* curriculam related styles  */
 .curriculam {
     background-image: url('./assets/bg.png');
-    
+
     padding-top: 2.5rem;
     max-width: 84%;
     margin-top: 3rem;
@@ -207,17 +222,20 @@ ul>li {
     border-radius: 50%;
     border: none;
 }
+
 /* our-stories related style  */
-.our-stories{
-   
-    background: url('./assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+.our-stories {
+    background: url('./assets/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    /* margin-bottom: 2rem; */
+
 }
+
 .our-section-card {
     border-radius: 1rem;
     background: rgb(255, 255, 255);
-    width: 17.5rem;
-    height: 18.5rem;
-    background-color: aqua;
+    /* width: 17.5rem;
+    height: 18.5rem; */
+    background-color: white;
 }
 
 .our-section-card-img {
@@ -226,21 +244,66 @@ ul>li {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-.our-section-card > h2 {
-    padding: 0rem 1rem;
+
+.our-section-card>h2 {
+    padding: 0rem 2rem;
     font-size: 1rem;
 }
-.gg{
+
+.our-section-card>p {
+    padding: 0rem 2rem;
+
+}
+
+.gg {
     margin-top: -1rem;
 }
-.our-section-cards{
+
+.our-section-cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1.4rem;
-     max-width: 75%;
+    max-width: 84%;
     margin-top: 3rem;
     padding: 2rem;
+    margin-bottom: 6rem;
 }
-.our-stories-main-title{
+
+.our-stories-main-title {
     margin-bottom: 4rem;
+}
+
+.box1 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.btn-view-all {
+    text-align: center;
+}
+
+.view-all {
+    margin-bottom: 4rem;
+}
+
+/* footer related style  */
+.footer-content {
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    height: 25rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    background-color: rgb(1, 172, 253);
+}
+.logos-text{
+    margin-top: -7rem;
+}
+
+.list {
+    text-align: left;
+}
+
+.list>ul>li {
+    margin-bottom: 1rem;
 }
