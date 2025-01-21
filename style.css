@@ -67,6 +67,9 @@
 .tertiary-color {
     color: rgb(1, 172, 253);
 }
+.white{
+    color: white;
+}
 
 .read-more-color1 {
     color: rgb(100, 200, 255);
@@ -222,6 +225,11 @@ ul>li {
     border-radius: 50%;
     border: none;
 }
+.arrow:hover{
+    background-color: rgb(60, 216, 232) ;
+    transform: scale(1.2);
+    border: 2px solid  rgb(254, 163, 1);
+}
 
 /* our-stories related style  */
 .our-stories {
@@ -235,6 +243,7 @@ ul>li {
     background: rgb(255, 255, 255);
     /* width: 17.5rem;
     height: 18.5rem; */
+    /* width: 50%; */
     background-color: white;
 }
 
@@ -291,13 +300,13 @@ ul>li {
 .footer-content {
     justify-content: space-between;
     padding: 2rem 4rem;
-    height: 25rem;
-    margin-bottom: 2rem;
+    /* height: 25rem; */
+    /* margin-bottom: 2rem; */
     align-items: center;
     background-color: rgb(1, 172, 253);
 }
-.logos-text{
-    margin-top: -7rem;
+.title-and-logo{
+    margin-bottom: 7rem;
 }
 
 .list {
@@ -306,4 +315,75 @@ ul>li {
 
 .list>ul>li {
     margin-bottom: 1rem;
+}
+.hidden{
+    display: none;
+}
+/* media query related style  */
+@media screen and (max-width:576px) {
+    .hidden-sm, .arrow{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .line{
+        height: 0.07rem;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner-texts{
+        text-align: center;
+    }
+    .banner-img-sm{
+        height: 100%;
+        width: 100%;
+    }
+     .curriculam-cards{
+        flex-direction: column;
+     }
+     .our-section-cards {
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.8rem;
+     }
+     .our-section-card {
+        width: 100%; /* Ensure card fits within grid cells */
+        height: auto; /* Adjust height naturally */
+    }
+     .footer-content{
+        flex-direction: column;
+        justify-content: left;
+        margin-left: -5rem;
+     }
+    .list > ul > li {
+      margin-left: -10rem;
+      margin-top: 2rem;
+    }
+    .title-and-logo > h2{
+        margin: 1rem 0;
+        text-align: left;
+        margin-left: 0.6rem;
+    }
+    .logo1{
+     margin-left: 0;
+    }
+    .curriculam{
+        margin-left: 0;
+    }
+    .special-btn {
+    padding: .5rem 1rem;
+    border-radius: 1.1rem;
+    border: none;
+    font-size: .7rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    }
+    .logos > div {
+        margin: 0rem 1.1rem;
+    }
+    .curriculam-title{
+        font-size: 1.8rem;
+    }
+    
 }
