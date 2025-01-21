@@ -124,6 +124,7 @@
     font-size: 1rem;
     line-height: 1.3rem;
     margin-top: 1.5rem;
+    color: #666666;
 }
 
 .card-btn {
@@ -384,6 +385,9 @@ ul>li {
     }
     .curriculam-title{
         font-size: 1.8rem;
+    }
+    .card-title-size{
+        font-size: 1rem;
     }
     
 }
